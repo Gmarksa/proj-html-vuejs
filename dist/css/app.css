@@ -1,1 +1,8 @@
+/* Common Colors */
+.nav-link {
+  color: black !important;
+}
 
+nav img {
+  width: 160px;
+}
