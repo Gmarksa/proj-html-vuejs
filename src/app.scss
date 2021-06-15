@@ -28,3 +28,44 @@ nav{
     vertical-align: middle;
 }
 
+#jumbotron{
+    position: relative;
+    text-align: center;
+
+}
+
+#text_jumbo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    a{
+        color: $jungle-green;
+
+        font-size: 14px;
+        font-weight: bold;
+    }
+/*     a:hover{
+        color: white;
+    } */
+
+    button{
+        min-height: 52px;
+        padding: 0 36px;
+    }
+    button:hover{
+        background-color: $mountain-meadow !important;
+    }
+
+}
+
+h3{
+    font-size: 34px;
+}
+
+h2{
+    font-size: 64px;
+}

@@ -22,3 +22,39 @@ nav img {
   font-size: 10px;
   vertical-align: middle;
 }
+
+#jumbotron {
+  position: relative;
+  text-align: center;
+}
+
+#text_jumbo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /*     a:hover{
+          color: white;
+      } */
+}
+#text_jumbo a {
+  color: #2fab97;
+  font-size: 14px;
+  font-weight: bold;
+}
+#text_jumbo button {
+  min-height: 52px;
+  padding: 0 36px;
+}
+#text_jumbo button:hover {
+  background-color: #1fad95 !important;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 64px;
+}
