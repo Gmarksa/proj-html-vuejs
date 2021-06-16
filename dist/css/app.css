@@ -66,6 +66,10 @@ nav img {
   transform: translate(-50%, -50%);
 }
 
+#upgrade_skills img {
+  cursor: pointer;
+}
+
 #upgrade_skills .shape-07 {
   position: absolute;
   bottom: -88px;
@@ -77,6 +81,36 @@ nav img {
   top: 50px;
   left: -87px;
   z-index: -1;
+}
+
+#latest_courses {
+  background: white;
+  background: linear-gradient(180deg, white 0%, whitesmoke 100%);
+  border-bottom-left-radius: 50% 12%;
+  border-bottom-right-radius: 50% 12%;
+  padding-top: 50px;
+}
+
+#slide {
+  overflow: hidden;
+  cursor: pointer;
+}
+#slide .card {
+  flex: 0 0 calc(100% / 3);
+}
+#slide a {
+  font-size: 20px;
+}
+
+.fa-circle {
+  font-size: 8px;
+  color: #D8D8D8;
+  cursor: pointer;
+}
+
+.active {
+  font-size: 12px;
+  color: black;
 }
 
 .container-fluid {

@@ -35,13 +35,13 @@ const app = new Vue({
             },
         ],
         counter: 0,
-        slideImgs: [
+        courseList: [
             {
                 title: 'Learning to Write as a Professional Author',
                 imgSource: '../dist/img/course-01.jpg',
                 price: 40.00,
                 lessons: '20',
-                students: 688,
+                students: 50,
                 url: '/learning-to-write'
             },
 
@@ -50,7 +50,7 @@ const app = new Vue({
                 imgSource: '../dist/img/course-02.jpg',
                 price: 0.00,
                 lessons: '20',
-                students: 603,
+                students: 769,
                 url: '/customer-centric-strategies'
             },
 
@@ -59,7 +59,25 @@ const app = new Vue({
                 imgSource: '../dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
-                students: 397,
+                students: 62,
+                url: '/python-programming'
+            },
+
+            {
+                title: 'Open Programming Courses for Everyone: Python',
+                imgSource: '../dist/img/course-03.jpg',
+                price: 19.00,
+                lessons: '20',
+                students: 62,
+                url: '/python-programming'
+            },
+
+            {
+                title: 'Open Programming Courses for Everyone: Python',
+                imgSource: '../dist/img/course-03.jpg',
+                price: 19.00,
+                lessons: '20',
+                students: 62,
                 url: '/python-programming'
             }
         ],
@@ -67,7 +85,7 @@ const app = new Vue({
             {
                 title: 'Brush Strokes Energize Trees in Paintings',
                 imgSource: '../dist/img/artist-blog-01.jpg',
-                date: '10/10/20',
+                date: '15/05/20',
                 views: 688,
                 url: '#'
             },
@@ -75,7 +93,7 @@ const app = new Vue({
             {
                 title: 'Pocket-Sized Notebooks hold Miniature Paintings',
                 imgSource: '../dist/img/artist-blog-02.jpg',
-                date: '10/10/20',
+                date: '15/05/20',
                 views: 603,
                 url: '/pages'
             },
@@ -83,7 +101,7 @@ const app = new Vue({
             {
                 title: 'Connection Between Self-Portraits and Identity',
                 imgSource: '../dist/img/artist-blog-03.jpeg',
-                date: '10/10/20',
+                date: '15/05/20',
                 views: 397,
                 url: '/courses'
             }
@@ -150,6 +168,16 @@ const app = new Vue({
                 ]
             }
         ]
+    },
+
+    methods:{
+        scrollSlide(i){
+
+            if(i > this.counter)
+                document.getElementById("slide").scrollLeft+= 400 * i
+            else if( i < this.counter)
+                document.getElementById("slide").scrollLeft-= 400 * i
+        }
     }
 });
 

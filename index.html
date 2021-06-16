@@ -146,6 +146,36 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Latest Online Courses -->
+            <section id="latest_courses">
+                <div class="container">
+                    <div class="text-center">
+                        <span>JOIN MAXCOACH AT BEST</span>
+                        <h2 class="mb-5">Latest Online <span class="txt_jungle_green">Courses</span></h2>
+                    </div>
+                    
+                    <div id="slide" class="d-flex">
+                        <div class="card mr-5" v-for="course in courseList">
+                            <img class="card-img-top" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
+                            <div class="card-body">
+                                <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price}}</span>
+                                <a class="card-text text-dark d-block mb-4" :href="course.url">{{course.title}}</a>
+                                <span class="txt_delta mr-4"><i class="far fa-file-alt"></i> {{course.lessons}} Lessons</span>
+                                <span class="txt_delta"><i class="far fa-user"></i> {{course.students}} Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="circles d-flex justify-content-center align-items-center mt-3" v-if="courseList.length > 3">
+                        <i class="fas fa-circle mr-3" v-for="(image, index) in courseList" @click="scrollSlide(index), counter = index"  :class="(counter == index) ? 'active' : '' "></i>
+                    </div>
+
+                    <div class="text-center txt_delta mt-3 mb-4" style="font-size: 18px;">
+                        Control your personal preference settings to get notified about appropriate courses. <a class="text-dark txt_decoration" href="#">View all courses <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </section>
     </div>
     
     <!-- JS -->

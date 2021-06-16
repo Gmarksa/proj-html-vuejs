@@ -30,44 +30,58 @@ var app = new Vue({
       url: '/shop'
     }],
     counter: 0,
-    slideImgs: [{
+    courseList: [{
       title: 'Learning to Write as a Professional Author',
       imgSource: '../dist/img/course-01.jpg',
       price: 40.00,
       lessons: '20',
-      students: 688,
+      students: 50,
       url: '/learning-to-write'
     }, {
       title: 'Customer-centric Info-Tech Strategies',
       imgSource: '../dist/img/course-02.jpg',
       price: 0.00,
       lessons: '20',
-      students: 603,
+      students: 769,
       url: '/customer-centric-strategies'
     }, {
       title: 'Open Programming Courses for Everyone: Python',
       imgSource: '../dist/img/course-03.jpg',
       price: 19.00,
       lessons: '20',
-      students: 397,
+      students: 62,
+      url: '/python-programming'
+    }, {
+      title: 'Open Programming Courses for Everyone: Python',
+      imgSource: '../dist/img/course-03.jpg',
+      price: 19.00,
+      lessons: '20',
+      students: 62,
+      url: '/python-programming'
+    }, {
+      title: 'Open Programming Courses for Everyone: Python',
+      imgSource: '../dist/img/course-03.jpg',
+      price: 19.00,
+      lessons: '20',
+      students: 62,
       url: '/python-programming'
     }],
     blogPosts: [{
       title: 'Brush Strokes Energize Trees in Paintings',
       imgSource: '../dist/img/artist-blog-01.jpg',
-      date: '10/10/20',
+      date: '15/05/20',
       views: 688,
       url: '#'
     }, {
       title: 'Pocket-Sized Notebooks hold Miniature Paintings',
       imgSource: '../dist/img/artist-blog-02.jpg',
-      date: '10/10/20',
+      date: '15/05/20',
       views: 603,
       url: '/pages'
     }, {
       title: 'Connection Between Self-Portraits and Identity',
       imgSource: '../dist/img/artist-blog-03.jpeg',
-      date: '10/10/20',
+      date: '15/05/20',
       views: 397,
       url: '/courses'
     }],
@@ -108,6 +122,11 @@ var app = new Vue({
         url: '/features'
       }]
     }]
+  },
+  methods: {
+    scrollSlide: function scrollSlide(i) {
+      if (i > this.counter) document.getElementById("slide").scrollLeft += 400 * i;else if (i < this.counter) document.getElementById("slide").scrollLeft -= 400 * i;
+    }
   }
 });
 /* proj-html-vuejs/ */
