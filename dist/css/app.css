@@ -41,17 +41,42 @@ nav img {
   right: -90px;
 }
 
-#shape_07 {
+#learn_about .shape_07 {
   position: absolute;
   top: -60px;
   left: 430px;
   z-index: -1;
 }
-
-#shape_02 {
+#learn_about .shape_02 {
   position: absolute;
   top: 330px;
   left: 405px;
+}
+
+#skills_main_img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#player_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#upgrade_skills .shape-07 {
+  position: absolute;
+  bottom: -88px;
+  left: 550px;
+  z-index: -1;
+}
+#upgrade_skills .shape-05 {
+  position: absolute;
+  top: 50px;
+  left: -87px;
+  z-index: -1;
 }
 
 .container-fluid {

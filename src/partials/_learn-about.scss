@@ -1,0 +1,31 @@
+#learn_main_img{
+    position: relative; 
+
+    top: 0; 
+    left: 0;
+}
+
+#about_us_img{
+    position: absolute; 
+
+    top: -73px; 
+    right: -90px;
+}
+
+#learn_about{
+    .shape_07{
+        position: absolute; 
+        
+        top: -60px; 
+        left: 430px;
+    
+        z-index: -1;
+    }
+    
+    .shape_02{
+        position: absolute; 
+        
+        top: 330px; 
+        left: 405px;
+    }
+}
