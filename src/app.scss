@@ -1,37 +1,15 @@
 @import './partials/variables';
+@import './partials/nav';
 
 .container-fluid{
     padding: 0 150px;
-}
-
-.nav-link{
-    color: black !important;
-}
-
-nav{
-    img{
-        width: 160px;
-    }
-}
-
-#search_box{
-    width: 280px;
-    min-height: 48px;
-
-    background-color: #f5f5f5;
-    border: none;
-}
-
-.fa-chevron-down{
-    font-size: 10px;
-
-    vertical-align: middle;
 }
 
 #jumbotron{
     position: relative;
     text-align: center;
 
+    margin-bottom: 189px !important;
 }
 
 #text_jumbo{
@@ -48,24 +26,37 @@ nav{
         font-size: 14px;
         font-weight: bold;
     }
-/*     a:hover{
-        color: white;
-    } */
 
-    button{
-        min-height: 52px;
-        padding: 0 36px;
-    }
     button:hover{
         background-color: $mountain-meadow !important;
     }
 
-}
-
-h3{
-    font-size: 34px;
+    h3{
+        font-size: 34px;
+    }
+    
+    h2{
+        font-size: 64px;
+    }
 }
 
 h2{
-    font-size: 64px;
+    font-size: 48px;
+
+    font-weight: bold;
+}
+
+.txt_decoration{
+    text-decoration: underline;
+    text-decoration-color: #e0e0e0;
+}
+
+.txt_jungle_green{
+    color: $jungle-green;
+}
+
+.txt_delta{
+    color: $delta;
+
+    font-size: 15px;
 }

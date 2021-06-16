@@ -1,0 +1,32 @@
+.nav-link{
+    color: black !important;
+}
+
+nav{
+    img{
+        width: 160px;
+    }
+}
+
+#right_nav .far, .fas{
+    font-size: 18px;
+}
+
+
+#search_wrap, #search_box{
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+}
+#search_box{
+    width: 250px;
+    min-height: 48px;
+
+    border: none;
+    outline: none;
+}
+
+.fa-chevron-down{
+    font-size: 10px;
+
+    vertical-align: middle;
+}

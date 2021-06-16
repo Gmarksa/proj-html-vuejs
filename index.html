@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Style.css -->
     <link rel="stylesheet" href="./dist/css/app.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./dist/img/favicon-32x32.png"/>
 
     <title>Distant Learning</title>
 </head>
@@ -28,7 +30,7 @@
                     <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
                         <ul class="navbar-nav">
                             <li class="nav-item me-lg-1 mr-3" v-for="el in navLinks">
-                                <a class="nav-link" href="#">{{el}} <i class="fas fa-chevron-down"></i></a>
+                                <a class="nav-link" :href="el.url">{{el.pgName}} <i class="fas fa-chevron-down"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -37,8 +39,8 @@
                     <img class="navbar-brand mx-auto text-center order-0 order-md-1" src="./dist/img/dark-logo.png" alt="Logo">
                     
                     <!-- Right -->
-                    <div class="navbar-collapse collapse dual-nav w-50 order-2">
-                        <ul class="nav navbar-nav ml-auto">
+                    <div id="right_nav" class="navbar-collapse collapse dual-nav w-50 order-2">
+                        <ul class="nav navbar-nav align-items-center ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                             </li>
@@ -48,7 +50,10 @@
                             </li>
                             
                             <li class="nav-item">
-                                <input id="search_box" class="nav-link rounded" type="search" placeholder="Search...">    
+                                <div id="search_wrap" class="rounded">
+                                    <input id="search_box" class="nav-link d-inline-block" type="search" placeholder="Search...">
+                                    <i class="fas fa-search txt_jungle_green pr-3"></i>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -58,18 +63,20 @@
         </header>
         
         <main>
+            <!-- Jumbotron -->
             <div id="jumbotron">
                 <img class="img-fluid" src="./dist/img/home-3-hero-bg.jpg" alt="Hero Img">
     
                 <div id="text_jumbo">
                     <h3>Commence Business</h3>
-                    <h2>Distant Mentoring Program</h2>
+                    <h2 class="mb-4">Distant Mentoring Program</h2>
     
-                    <button type="button" class="btn bg-white"><a class="" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a></button>
+                    <button type="button" class="btn bg-white"><a class="txt_decoration" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a></button>
                     
                 </div>
             </div>
-        </main>
+
+            
     </div>
     
     <!-- JS -->
