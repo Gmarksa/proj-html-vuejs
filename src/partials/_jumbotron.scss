@@ -1,0 +1,38 @@
+#jumbotron{
+    position: relative;
+    text-align: center;
+
+    margin-bottom: 189px !important;
+}
+
+#text_jumbo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    a{
+        color: $jungle-green;
+
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    button:hover{
+        background-color: $mountain-meadow !important;
+    }
+
+    h3{
+        font-size: 34px;
+
+        font-weight: 700;
+    }
+    
+    h2{
+        font-size: 64px;
+
+        font-weight: 400;
+    }
+}
