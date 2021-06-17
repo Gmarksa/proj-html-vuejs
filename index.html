@@ -181,8 +181,8 @@
                     <div id="slide" class="d-flex">
                         <div class="card mr-5" v-for="course in courseList">
                             <img class="card-img-top" style="position: relative;" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
-                            <div id="price_badge" style="position: absolute; right: 0;">
-                                <h5 class="text-white p-1" v-if="course.price == 0">Free</h5>
+                            <div id="price_badge" v-if="course.price == 0" style="position: absolute; right: 0;">
+                                <h5 class="text-white font_weight_700" >Free</h5>
                             </div>
 
                             <div class="card-body">

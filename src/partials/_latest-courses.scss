@@ -23,6 +23,33 @@
 
 #price_badge{
     background-color: #ee7455;
+
+    h5{
+        font-size: 18px;
+        
+        padding: 5px 13px;
+    }
+}
+#price_badge::before{
+    border-top: 19px solid #ee7455;
+
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+#price_badge::after{
+    bottom: 0;
+    border-bottom: 19px solid #ee7455;
+
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
 }
 
 .fa-circle{
