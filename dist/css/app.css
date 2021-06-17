@@ -317,7 +317,8 @@ nav img {
 
 footer {
   background-color: #171621;
-  padding: 70px 0;
+  position: relative;
+  padding: 70px 0 20px 0;
 }
 footer h4 {
   font-size: 18px;
@@ -327,6 +328,15 @@ footer a, footer span, footer p {
 }
 footer i {
   font-size: 25px;
+}
+
+#scroll_top {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  background-color: #2fab97 !important;
 }
 
 #stats {

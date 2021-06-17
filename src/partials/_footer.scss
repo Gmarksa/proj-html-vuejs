@@ -1,7 +1,9 @@
 footer{
     background-color: #171621;
 
-    padding: 70px 0;
+    position: relative;
+
+    padding: 70px 0 20px 0;
 
     h4{
         font-size: 18px;
@@ -14,4 +16,15 @@ footer{
     i{
         font-size: 25px;
     }
+}
+
+#scroll_top{
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+
+    background-color: $jungle-green !important;
 }
