@@ -186,7 +186,7 @@
                             </div>
 
                             <div class="card-body">
-                                <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price}}</span>
+                                <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price.toFixed(2)}}</span>
                                 <a class="card-text txt_dark d-block mb-4" :href="course.url">{{course.title}}</a>
                                 <span class="txt_delta mr-4"><i class="far fa-file-alt"></i> {{course.lessons}} Lessons</span>
                                 <span class="txt_delta"><i class="far fa-user"></i> {{course.students}} Students</span>

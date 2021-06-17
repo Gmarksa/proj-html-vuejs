@@ -69,21 +69,21 @@ const app = new Vue({
             },
 
             {
-                title: 'Open Programming Courses for Everyone: Python',
+                title: 'Course 4',
                 imgSource: './dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
                 students: 62,
-                url: '/python-programming'
+                url: '/course-4'
             },
 
             {
-                title: 'Open Programming Courses for Everyone: Python',
+                title: 'Course 5',
                 imgSource: './dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
                 students: 62,
-                url: '/python-programming'
+                url: '/course-4'
             }
         ],
 
