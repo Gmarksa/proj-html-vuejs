@@ -180,7 +180,11 @@
                     <!-- Courses List -->
                     <div id="slide" class="d-flex">
                         <div class="card mr-5" v-for="course in courseList">
-                            <img class="card-img-top" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
+                            <img class="card-img-top" style="position: relative;" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
+                            <div id="price_badge" style="position: absolute; right: 0;">
+                                <h5 class="text-white p-1" v-if="course.price == 0">Free</h5>
+                            </div>
+
                             <div class="card-body">
                                 <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price}}</span>
                                 <a class="card-text txt_dark d-block mb-4" :href="course.url">{{course.title}}</a>
@@ -192,7 +196,7 @@
 
                     <!-- Slider Circles -->
                     <div class="circles d-flex justify-content-center align-items-center mt-3" v-if="courseList.length > 3">
-                        <i class="fas fa-circle mr-3" v-for="(image, index) in courseList" @click="scrollSlide(index), counter = index"  :class="(counter == index) ? 'active' : '' "></i>
+                        <i class="fas fa-circle mr-3" v-for="(image, index) in courseList" @click="counter = index"  :class="(counter == index) ? 'active' : '' "></i>
                     </div>
 
                     <div class="text-center txt_delta mt-5 mb-4" style="font-size: 18px;">

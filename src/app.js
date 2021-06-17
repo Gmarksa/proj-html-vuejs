@@ -178,10 +178,6 @@ const app = new Vue({
     methods:{
         scrollSlide(i){
 
-            if(i > this.counter)
-                document.getElementById("slide").scrollLeft+= 400 * i
-            else if( i < this.counter)
-                document.getElementById("slide").scrollLeft-= 400 * i
         }
     }
 });

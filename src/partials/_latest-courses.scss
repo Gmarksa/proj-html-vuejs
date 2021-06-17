@@ -13,12 +13,16 @@
     cursor: pointer;
 
     .card{
-        flex: 0 0 calc(100% / 3);
+        flex: 0 0 calc((100% / 3) - 2.8rem);
     }
 
     a{
         font-size: 20px;
     }
+}
+
+#price_badge{
+    background-color: #ee7455;
 }
 
 .fa-circle{
