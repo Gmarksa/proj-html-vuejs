@@ -1,0 +1,32 @@
+#transform_main_img{
+    position: relative;
+}
+
+#transform_you{
+    button{
+        background-color: $jungle-green !important;
+    }
+
+    .shape-01{
+        position: absolute;
+        bottom: 0px;
+        left: -250px;
+    }
+
+    .shape-05{
+        position: absolute;
+        top: 130px;
+        left: -110px;
+        
+        z-index: -1;
+    }
+
+    .shape-07{
+        position: absolute;
+
+        bottom: -88px; 
+        right: 280px; 
+        
+        z-index: -1;
+    }
+}
