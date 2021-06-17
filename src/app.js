@@ -83,33 +83,36 @@ const app = new Vue({
         ],
         blogPosts: [
             {
-                title: 'Brush Strokes Energize Trees in Paintings',
+                title: 'Pocket-Sized Notebooks hold Miniature Paintings',
                 imgSource: '../dist/img/artist-blog-01.jpg',
-                date: '15/05/20',
-                views: 688,
+                date: '05-15-2020',
+                get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
+                views: 603,
                 url: '#'
             },
 
             {
-                title: 'Pocket-Sized Notebooks hold Miniature Paintings',
+                title: 'Connection Between Self-Portraits and Identity',
                 imgSource: '../dist/img/artist-blog-02.jpg',
-                date: '15/05/20',
-                views: 603,
+                date: '05-15-2020',
+                get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
+                views: 397,
                 url: '/pages'
             },
 
             {
-                title: 'Connection Between Self-Portraits and Identity',
+                title: 'Brush Strokes Energize Trees in Paintings',
                 imgSource: '../dist/img/artist-blog-03.jpeg',
-                date: '15/05/20',
-                views: 397,
+                date: '05-15-2020',
+                get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
+                views: 688,
                 url: '/courses'
             }
         ],
 
         footerLinks: [
             {
-                section: 'Explore',
+                name: 'Explore',
                 data: [
                     {
                         pgName: 'Start here',
@@ -144,7 +147,7 @@ const app = new Vue({
             },
 
             {
-                section: 'Information',
+                name: 'Information',
                 data: [
                     {
                         pgName: 'Membership',

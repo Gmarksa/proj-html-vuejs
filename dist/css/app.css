@@ -21,6 +21,11 @@
 }
 
 /* Others */
+.cursor_inherit {
+  cursor: inherit;
+  text-decoration: none;
+}
+
 .font_weight_400 {
   font-weight: 400;
 }
@@ -237,6 +242,12 @@ nav img {
 #recent_posts {
   background-color: #f8f8f8;
   padding-top: 110px;
+}
+#recent_posts h3 {
+  font-size: 24px;
+}
+#recent_posts i {
+  font-size: 14px;
 }
 
 #newsletter {
