@@ -159,6 +159,9 @@ nav img {
   cursor: pointer;
 }
 
+#upgrade_skills a {
+  font-size: 15px;
+}
 #upgrade_skills .shape-07 {
   position: absolute;
   bottom: -88px;
@@ -188,11 +191,13 @@ nav img {
   flex: 0 0 calc((100% / 3) - 2.8rem);
 }
 #slide a {
-  font-size: 20px;
+  font-size: 19x;
 }
 
 #price_badge {
   background-color: #ee7455;
+  position: absolute;
+  right: 0;
 }
 #price_badge h5 {
   font-size: 18px;
@@ -231,6 +236,9 @@ nav img {
   color: black;
 }
 
+#testimonials a {
+  font-size: 15px;
+}
 #testimonials .col-7 {
   padding: 37px 50px 40px;
   box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);

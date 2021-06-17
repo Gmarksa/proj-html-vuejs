@@ -17,16 +17,19 @@
     }
 
     a{
-        font-size: 20px;
+        font-size: 19x;
     }
 }
 
 #price_badge{
     background-color: #ee7455;
 
+    position: absolute;
+    right: 0;
+
     h5{
         font-size: 18px;
-        
+
         padding: 5px 13px;
     }
 }

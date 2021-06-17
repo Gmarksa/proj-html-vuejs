@@ -179,15 +179,15 @@
                     
                     <!-- Courses List -->
                     <div id="slide" class="d-flex">
-                        <div class="card mr-5" v-for="course in courseList">
-                            <img class="card-img-top" style="position: relative;" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
-                            <div id="price_badge" v-if="course.price == 0" style="position: absolute; right: 0;">
-                                <h5 class="text-white font_weight_700" >Free</h5>
+                        <div class="card border-0 mr-5" v-for="course in courseList">
+                            <img class="card-img-top" :src="course.imgSource" alt="Course image cap">
+                            <div id="price_badge" v-if="course.price == 0">
+                                <h5 class="text-white font_weight_700">Free</h5>
                             </div>
 
                             <div class="card-body">
                                 <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price.toFixed(2)}}</span>
-                                <a class="card-text txt_dark d-block mb-4" :href="course.url">{{course.title}}</a>
+                                <a class="card-text txt_dark font_weight_700 d-block mb-4" :href="course.url">{{course.title}}</a>
                                 <span class="txt_delta mr-4"><i class="far fa-file-alt"></i> {{course.lessons}} Lessons</span>
                                 <span class="txt_delta"><i class="far fa-user"></i> {{course.students}} Students</span>
                             </div>
@@ -217,7 +217,7 @@
 
                             <p class="txt_delta mt-3 " style="font-size: 15px;">Seeking for verbals of our service quality? Find them here. Everything is transparent and straightforward for your sense of jusitifcation.</p>
                         
-                            <a class="txt_dark txt_decoration" href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a class="txt_dark font_weight_700 txt_decoration" href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
 
                         <!-- Testimonial Review -->
