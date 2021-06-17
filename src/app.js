@@ -38,7 +38,7 @@ const app = new Vue({
         courseList: [
             {
                 title: 'Learning to Write as a Professional Author',
-                imgSource: '../dist/img/course-01.jpg',
+                imgSource: './dist/img/course-01.jpg',
                 price: 40.00,
                 lessons: '20',
                 students: 50,
@@ -47,7 +47,7 @@ const app = new Vue({
 
             {
                 title: 'Customer-centric Info-Tech Strategies',
-                imgSource: '../dist/img/course-02.jpg',
+                imgSource: './dist/img/course-02.jpg',
                 price: 0.00,
                 lessons: '20',
                 students: 769,
@@ -56,7 +56,7 @@ const app = new Vue({
 
             {
                 title: 'Open Programming Courses for Everyone: Python',
-                imgSource: '../dist/img/course-03.jpg',
+                imgSource: './dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
                 students: 62,
@@ -65,7 +65,7 @@ const app = new Vue({
 
             {
                 title: 'Open Programming Courses for Everyone: Python',
-                imgSource: '../dist/img/course-03.jpg',
+                imgSource: './dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
                 students: 62,
@@ -74,7 +74,7 @@ const app = new Vue({
 
             {
                 title: 'Open Programming Courses for Everyone: Python',
-                imgSource: '../dist/img/course-03.jpg',
+                imgSource: './dist/img/course-03.jpg',
                 price: 19.00,
                 lessons: '20',
                 students: 62,
@@ -83,17 +83,8 @@ const app = new Vue({
         ],
         blogPosts: [
             {
-                title: 'Pocket-Sized Notebooks hold Miniature Paintings',
-                imgSource: '../dist/img/artist-blog-01.jpg',
-                date: '05-15-2020',
-                get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
-                views: 603,
-                url: '#'
-            },
-
-            {
                 title: 'Connection Between Self-Portraits and Identity',
-                imgSource: '../dist/img/artist-blog-02.jpg',
+                imgSource: './dist/img/artist-blog-02.jpg',
                 date: '05-15-2020',
                 get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
                 views: 397,
@@ -101,8 +92,17 @@ const app = new Vue({
             },
 
             {
+                title: 'Pocket-Sized Notebooks hold Miniature Paintings',
+                imgSource: './dist/img/artist-blog-01.jpg',
+                date: '05-15-2020',
+                get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
+                views: 603,
+                url: '#'
+            },
+
+            {
                 title: 'Brush Strokes Energize Trees in Paintings',
-                imgSource: '../dist/img/artist-blog-03.jpeg',
+                imgSource: './dist/img/artist-blog-03.jpeg',
                 date: '05-15-2020',
                 get formattedDate() {return dayjs(this.date).format("MMM DD, YYYY")},
                 views: 688,
