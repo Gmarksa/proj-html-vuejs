@@ -1,67 +1,20 @@
 @import './partials/variables';
+@import './partials/utilities';
+@import './partials/common';
+
 @import './partials/nav';
+@import './partials/jumbotron';
 @import './partials/learn-about';
 @import './partials/upgrade-skills';
 @import './partials/latest-courses';
+@import './partials/testimonials';
+@import './partials/transform-you';
+@import './partials/recent-posts';
+@import './partials/newsletter';
+@import './partials/footer';
 
 .container-fluid{
     padding: 0 150px;
-}
-
-#jumbotron{
-    position: relative;
-    text-align: center;
-
-    margin-bottom: 189px !important;
-}
-
-#text_jumbo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    color: white;
-
-    a{
-        color: $jungle-green;
-
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    button:hover{
-        background-color: $mountain-meadow !important;
-    }
-
-    h3{
-        font-size: 34px;
-    }
-    
-    h2{
-        font-size: 64px;
-    }
-}
-
-h2{
-    font-size: 48px;
-
-    font-weight: bold;
-}
-
-.txt_decoration{
-    text-decoration: underline;
-    text-decoration-color: #e0e0e0;
-}
-
-.txt_jungle_green{
-    color: $jungle-green;
-}
-
-.txt_delta{
-    color: $delta;
-
-    font-size: 15px;
 }
 
 #stats{
@@ -70,4 +23,3 @@ h2{
 section, #stats{
     padding-bottom: 110px;
 }
-

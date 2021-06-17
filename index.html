@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
     <!-- Style.css -->
     <link rel="stylesheet" href="./dist/css/app.css">
     <!-- Favicon -->
@@ -41,11 +44,11 @@
                     <!-- Right -->
                     <div id="right_nav" class="navbar-collapse collapse dual-nav w-50 order-2">
                         <ul class="nav navbar-nav align-items-center ml-auto">
-                            <li class="nav-item">
+                            <li class="nav-item mr-2">
                                 <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                             </li>
         
-                            <li class="nav-item">
+                            <li class="nav-item mr-2">
                                 <a class="nav-link" href="#"><i class="far fa-user-circle"></i></a>
                             </li>
                             
@@ -71,7 +74,7 @@
                     <h3>Commence Business</h3>
                     <h2 class="mb-4">Distant Mentoring Program</h2>
     
-                    <button type="button" class="btn bg-white"><a class="txt_decoration" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a></button>
+                    <button type="button" class="btn bg-white"><a class="font-weight-bold" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a></button>
                     
                 </div>
             </div>
@@ -82,10 +85,10 @@
                     <div class="row">
                         <div class="col-5">
                             <span class="txt_delta text-uppercase">Everything in <strong>MaxCoach</strong></span>
-                            <h2 class="font-weight-bold">Learn about our <span class="txt_jungle_green">Work Culture</span> at MaxCoach</h2>
+                            <h2 class="font-weight-bold">Learn about our <span class="txt_jungle_green font_weight_400">Work Culture</span> at MaxCoach</h2>
                             <p class="txt_delta mr-5">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month. </p>
                         
-                            <p class="txt_delta">Have questions?​ <span class="txt_jungle_green txt_decoration font-weight-bold">Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></p>
+                            <span class="txt_delta">Have questions?​ <span class="txt_jungle_green txt_decoration font-weight-bold">Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></span>
                         </div>
     
                         <div class="offset-1">
@@ -137,11 +140,11 @@
 
                         <div class="col-4">
                             <span class="txt_delta text-uppercase">How We Work</span>
-                            <h2>Upgrade Your Skills <span class="txt_jungle_green">Upgrade Your Life</span></h2>
+                            <h2>Upgrade Your Skills <span class="txt_jungle_green font_weight_400">Upgrade Your Life</span></h2>
 
                             <p class="txt_delta">Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
                             
-                            <a class="text-dark font-weight-bold txt_decoration" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a class="txt_dark font-weight-bold txt_decoration" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </section>
@@ -151,8 +154,8 @@
             <section id="latest_courses">
                 <div class="container">
                     <div class="text-center">
-                        <span>JOIN MAXCOACH AT BEST</span>
-                        <h2 class="mb-5">Latest Online <span class="txt_jungle_green">Courses</span></h2>
+                        <span class="txt_delta">JOIN MAXCOACH AT BEST</span>
+                        <h2 class="mb-5">Latest Online <span class="txt_jungle_green font_weight_400">Courses</span></h2>
                     </div>
                     
                     <div id="slide" class="d-flex">
@@ -160,7 +163,7 @@
                             <img class="card-img-top" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
                             <div class="card-body">
                                 <span class="d-block txt_jungle_green font-weight-bold mb-1" style="font-size: 24px;">${{course.price}}</span>
-                                <a class="card-text text-dark d-block mb-4" :href="course.url">{{course.title}}</a>
+                                <a class="card-text txt_dark d-block mb-4" :href="course.url">{{course.title}}</a>
                                 <span class="txt_delta mr-4"><i class="far fa-file-alt"></i> {{course.lessons}} Lessons</span>
                                 <span class="txt_delta"><i class="far fa-user"></i> {{course.students}} Students</span>
                             </div>
@@ -171,8 +174,8 @@
                         <i class="fas fa-circle mr-3" v-for="(image, index) in courseList" @click="scrollSlide(index), counter = index"  :class="(counter == index) ? 'active' : '' "></i>
                     </div>
 
-                    <div class="text-center txt_delta mt-3 mb-4" style="font-size: 18px;">
-                        Control your personal preference settings to get notified about appropriate courses. <a class="text-dark txt_decoration" href="#">View all courses <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <div class="text-center txt_delta mt-5 mb-4" style="font-size: 18px;">
+                        <span class="d-block">Control your personal preference settings to get notified about</span> appropriate courses. <a class="txt_dark font_weight_700 txt_decoration" href="#">View all courses <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>
             </section>
@@ -180,7 +183,7 @@
     
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
     <script src="./src/app.js"></script>
 </body>
 </html>

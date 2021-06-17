@@ -1,14 +1,45 @@
-/* Text Colors*/
+/* Text Colors */
 
+.txt_decoration{
+    text-decoration: underline;
+    text-decoration-color: #e0e0e0;
+}
 
+.txt_dark{
+    color: $dark;
+}
 
-/* BG */
+.txt_jungle_green{
+    color: $jungle-green;
+}
 
+.txt_delta{
+    color: $delta;
 
+    font-size: 14.5px;
+}
 
-/* Spacing */
+/* Others */
 
+.font_weight_400{
+    font-weight: 400;
+}
 
+.font_weight_500{
+    font-weight: 500;
+}
+
+.font_weight_700{
+    font-weight: 700;
+}
 
 /* Components */
 
+button{
+    min-height: 52px;
+    padding: 0 36px !important;
+}
+
+.avatar{
+    height: 70px;
+}
