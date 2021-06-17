@@ -3,6 +3,8 @@ const app = new Vue({
     el: '#app',
 
     data:{
+        /* Navbar */
+
         navLinks: [
             {
                 pgName: 'Home',
@@ -34,6 +36,9 @@ const app = new Vue({
                 url: '/shop'
             },
         ],
+
+        /* Slide */
+
         counter: 0,
         courseList: [
             {
@@ -81,6 +86,9 @@ const app = new Vue({
                 url: '/python-programming'
             }
         ],
+
+        /* Blog */
+
         blogPosts: [
             {
                 title: 'Connection Between Self-Portraits and Identity',
@@ -110,65 +118,59 @@ const app = new Vue({
             }
         ],
 
-        footerLinks: [
+        /* Footer */
+
+        footerExplore: [
             {
-                name: 'Explore',
-                data: [
-                    {
-                        pgName: 'Start here',
-                        url: '#'
-                    },
-        
-                    {
-                        pgName: 'Blog',
-                        url: '/pages'
-                    },
-        
-                    {
-                        pgName: 'About us',
-                        url: '/courses'
-                    },
-        
-                    {
-                        pgName: 'Success story',
-                        url: '/features'
-                    },
-        
-                    {
-                        pgName: 'Courses',
-                        url: '/blog'
-                    },
-        
-                    {
-                        pgName: 'Contact us',
-                        url: '/shop'
-                    }
-                ]
+                pgName: "Start here",
+                url: "/start-here",
             },
 
             {
-                name: 'Information',
-                data: [
-                    {
-                        pgName: 'Membership',
-                        url: '#'
-                    },
-        
-                    {
-                        pgName: 'Purchase guide',
-                        url: '/pages'
-                    },
-        
-                    {
-                        pgName: 'Privacy policy',
-                        url: '/courses'
-                    },
-        
-                    {
-                        pgName: 'Terms of service',
-                        url: '/features'
-                    }
-                ]
+                pgName: "Success story",
+                url: "/success-story",
+            },
+
+            {
+                pgName: "Blog",
+                url: "/blog",
+            },
+            
+            {
+                pgName: "Courses",
+                url: "/courses",
+            },
+            
+            {
+                pgName: "About us",
+                url: "/about-us",
+            },
+
+            {
+                pgName: "Contact us",
+                url: "/contact-us",
+            }
+        ],
+
+        footerInformation: [
+            {
+                pgName: "Membership",
+                url: "/membership",
+            },
+            
+            {
+                pgName: "Purchase guide",
+                url: "/purchase-guide",
+            },
+            
+            {
+                pgName: "Privacy policy",
+                url: "/privacy-policy",
+            },
+            
+            {
+                pgName: "Terms of service",
+                url: "/terms-of-service",
             }
         ]
     },
@@ -183,5 +185,3 @@ const app = new Vue({
         }
     }
 });
-
-/* proj-html-vuejs/ */

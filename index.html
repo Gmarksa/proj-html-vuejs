@@ -320,36 +320,56 @@
 
         <!-- Footer -->
         <footer>
-            <div class="container">
-                <div class="row">
+            <div class="footer">
+                <div class="container">
+                    <div class="row pb-5">
 
-                    <!-- Address Info -->
-                    <div class="col-6">
-                        <span class="text-white font-weight-bold">Address</span>
+                        <!-- Address -->
+                        <div class="col-6">
 
-                        <div class="txt_delta mt-3">
-                            <span class="d-block">382 NE 191st St # 87394 Miami, FL 33179-3899</span>
-                            <span class="d-block">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</span>
-                            <span class="d-block">support@maxcoach.com</span>
+                            <!-- Contact Info -->
+                            <div class="txt_delta">
+                                <h4 class="text-white">Address</h4>
+                                <span class="d-block pt-2">382 NE 191st St # 87394 Miami, FL 33179-3899</span>
+                                <span class="d-block pt-2">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</span>
+                                <span class="d-block pt-2">support@maxcoach.com</span>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="row">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin"></i>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Footer Links -->
-                    <div class="col-3 d-flex" v-for="section in footerLinks">
-                        <span class="text-white">{{section.name}}</span>
+                        <!-- Explore -->
+                        <div class="col-3">
+                            <h4 class="text-white">Explore</h4>
 
-                        <div class="mt-3">
-                            <a href="" v-for="">Link 2</a>
-                            <a href="" v-for="">Link 1</a>
-                            <a href="" v-for="">Link 3</a>
-    
-                            <a href="" v-for="">Link 4</a>
-                            <a href="" v-for="">Link 5</a>
-                            <a href="" v-for="">Link 6</a>
+                            <div class="row pt-0">
+                                <div v-for='el in footerExplore' class="col-6 pt-2">
+                                    <a :href="el.url">{{el.pgName}}</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
+                        <!-- Information -->
+                        <div class="col-3 pl-5">
+                            <h4 class="text-white">Information</h4>
+
+                            <div class="row pt-0">
+                                <div v-for="el in footerInformation" class="col-12 pt-2">
+                                    <a :href="el.url">{{el.pgName}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+                
+                <h6 class="text-center pb-5 txt_delta">&copy; 2020 Maxcoach, All Rights Reserved</h6>
             </div>
         </footer>
 
