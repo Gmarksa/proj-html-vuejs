@@ -20,8 +20,8 @@
 </head>
 <body>
     <div id="app">
+        <!-- Navbar-->
         <header>
-            <!-- Navbar-->
             <nav class="navbar navbar-light navbar-expand-md justify-content-between">
                 <div class="container-fluid">
                     
@@ -68,14 +68,17 @@
         <main>
             <!-- Jumbotron -->
             <div id="jumbotron">
+                <!-- Hero IMG -->
                 <img class="img-fluid" src="./dist/img/home-3-hero-bg.jpg" alt="Hero Img">
-    
+                
+                <!-- Central Text -->
                 <div id="text_jumbo">
                     <h3>Commence Business</h3>
                     <h2 class="mb-4">Distant Mentoring Program</h2>
     
-                    <button type="button" class="btn bg-white"><a class="font-weight-bold" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a></button>
-                    
+                    <button type="button" class="btn bg-white">
+                        <a class="font-weight-bold" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </button>
                 </div>
             </div>
 
@@ -83,6 +86,8 @@
                 <!-- Learn About -->
                 <section id="learn_about">
                     <div class="row">
+
+                        <!-- Description -->
                         <div class="col-5">
                             <span class="txt_delta text-uppercase">Everything in <strong>MaxCoach</strong></span>
                             <h2 class="font-weight-bold">Learn about our <span class="txt_jungle_green font_weight_400">Work Culture</span> at MaxCoach</h2>
@@ -90,47 +95,57 @@
                         
                             <span class="txt_delta">Have questions?​ <span class="txt_jungle_green txt_decoration font-weight-bold">Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></span>
                         </div>
-    
+                        
+                        <!-- Space Offset -->
                         <div class="offset-1">
     
                         </div>
-    
+                        
+                        <!-- Imgs -->
                         <div class="col-6">
                             <img id="learn_main_img" class="rounded" src="./dist/img/stock-full-hd-10.jpg" alt="">
                             <img id="about_us_img" class="rounded" src="./dist/img/about-us-01.jpg" alt="">
                             <img class="shape_07" src="./dist/img/shape-07-100x100.png" alt="">
                             <img class="shape_02" src="./dist/img/shape-02.png" alt="">
                         </div>
+
                     </div>
                 </section>
 
                 <!-- Courses Stats -->
                 <div id="stats" class="row text-center">
+
+                    <!-- Enrolled Learners -->
                     <div class="col-4">
                         <div>
                             <h2 class="txt_jungle_green font-weight-bold">129+</h2>
-                            <p class="txt_delta font-weight-bold">ENROLLED LEARNERS</p>
+                            <p class="txt_delta font-weight-bold">Enrolled Learners</p>
                         </div>
                     </div>
 
+                    <!-- Finished Sessions -->
                     <div class="col-4">
                         <div>
                             <h2 class="txt_jungle_green font-weight-bold">80</h2>
-                            <p class="txt_delta font-weight-bold">FINISHED SESSIONS</p>
+                            <p class="txt_delta font-weight-bold">Finished Sessions</p>
                         </div>
                     </div>
 
+                    <!-- Satisfaction Rate -->
                     <div class="col-4">
                         <div>
                             <h2 class="txt_jungle_green font-weight-bold">4%</h2>
-                            <p class="txt_delta font-weight-bold">SATISFACTION RATE</p>
+                            <p class="txt_delta font-weight-bold">Satisfaction Rate</p>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Upgrade Your Skills -->
                 <section id="upgrade_skills">
                     <div class="row">
+
+                        <!-- Main Section IMGs -->
                         <div class="col-8">
                             <img id="skills_main_img" class="rounded" src="./dist/img/stock-full-hd-11.jpg" alt="">
                             <img id="player_icon" src="./dist/img/icon-youtube-play.png" alt="">
@@ -138,6 +153,7 @@
                             <img class="shape-05" src="./dist/img/shape-05.png" alt="">
                         </div>
 
+                        <!-- Description -->
                         <div class="col-4">
                             <span class="txt_delta text-uppercase">How We Work</span>
                             <h2>Upgrade Your Skills <span class="txt_jungle_green font_weight_400">Upgrade Your Life</span></h2>
@@ -146,6 +162,7 @@
                             
                             <a class="txt_dark font-weight-bold txt_decoration" href="#">Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -153,11 +170,14 @@
             <!-- Latest Online Courses -->
             <section id="latest_courses">
                 <div class="container">
+
+                    <!-- Section Title -->
                     <div class="text-center">
                         <span class="txt_delta">JOIN MAXCOACH AT BEST</span>
                         <h2 class="mb-5">Latest Online <span class="txt_jungle_green font_weight_400">Courses</span></h2>
                     </div>
                     
+                    <!-- Courses List -->
                     <div id="slide" class="d-flex">
                         <div class="card mr-5" v-for="course in courseList">
                             <img class="card-img-top" :src="course.imgSource" style="height: 200px;" alt="Course image cap">
@@ -170,6 +190,7 @@
                         </div>
                     </div>
 
+                    <!-- Slider Circles -->
                     <div class="circles d-flex justify-content-center align-items-center mt-3" v-if="courseList.length > 3">
                         <i class="fas fa-circle mr-3" v-for="(image, index) in courseList" @click="scrollSlide(index), counter = index"  :class="(counter == index) ? 'active' : '' "></i>
                     </div>
@@ -185,6 +206,7 @@
                 <section id="testimonials" class="mt-5">
                     <div class="row">
 
+                        <!-- Title & Description -->
                         <div class="col-5 pr-5">
                             <span class="txt_delta text-uppercase">Testimonials</span>
                             <h2>Why Do People <span class="txt_jungle_green font_weight_400">*Hearts*</span> Us?</h2>
@@ -194,6 +216,7 @@
                             <a class="txt_dark txt_decoration" href="#">View all <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
 
+                        <!-- Testimonial Review -->
                         <div class="col-7">
                             <h4 class="font_weight_700 mb-3">Professional team of specialists and passionate mentors at reach </h4>
                             <p class="txt_delta mb-5">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
@@ -208,8 +231,8 @@
                                     <span class="txt_delta">/ IT Specialist</span>
                                 </div>
                             </div>
-                            
                         </div>
+
                     </div>
                 </section>
 
@@ -218,6 +241,7 @@
                 <section id="transform_you">
                     <div class="row">
 
+                        <!-- Main Section IMGs -->
                         <div class="col-7">
                             <img id="transform_main_img" src="./dist/img/home-3-team-image.png" alt="">
                             <img class="shape-01" src="./dist/img/shape-01.png" alt="">
@@ -225,6 +249,7 @@
                             <img class="rounded shape-07" src="./dist/img/shape-07-150x150.png" alt="">
                         </div>
 
+                        <!-- Title & Description -->
                         <div class="col-4">
                             <span class="txt_delta text-uppercase">Everything in <span class="font-weight-bold">MaxCoach</span></span>
                             <h2>We’re Here To <span class="txt_jungle_green font_weight_400">Transform</span> You!</h2>
@@ -241,12 +266,14 @@
             <!-- Latest From Our Blogs -->
             <section id="recent_posts">
                 <div class="container">
+
+                    <!-- Section Title -->
                     <div class="text-center">
                         <span class="txt_delta text-uppercase">Read for more joyment</span>
                         <h2 class="mt-3 mb-5">Latest From <span class="txt_jungle_green font_weight_400">Our Blogs</span></h2>
                     </div>
     
-    
+                    <!-- Latest Posts List -->
                     <div class="d-flex flex-row-reverse">
                         <div class="col-4" v-for="post in blogPosts.slice(0,3)">
                             <img class="rounded img-fluid mb-3" :src="post.imgSource" alt="">
@@ -255,16 +282,17 @@
 
                             <a href=""><h3 class="txt_dark">{{post.title}}</h3></a>
                             <i class="far fa-calendar"></i> <a class="txt_delta mr-4" href="#">{{post.formattedDate}}</a>
-                            <i class="far fa-eye"></i> <a class="txt_delta cursor_inherit" href="#">{{post.views}} views</a>
+                            <i class="far fa-eye"></i> <span class="txt_delta" href="#">{{post.views}} views</span>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </section>
 
             <!-- Newsletter -->
             <section id="newsletter">
                 <div class="container">
+
                     <div class="text-center">
                         <h2>Subscribe <span class="txt_jungle_green font_weight_400">Newsletters</span></h2>
 
@@ -273,12 +301,13 @@
                             <span>delivered on a regular basis!</span> 
                         </div>
                         
+                        <!-- Input Mail Form -->
                         <div class="d-flex justify-content-center mt-5">
                             <input type="text" placeholder="Enter your email">
                             <button type="button" class="btn bg-dark"><a class="text-white" href="#">Subscribe</a></button>
                         </div>
-
                     </div>
+
                 </div>
             </section>  
             
@@ -288,6 +317,8 @@
         <footer>
             <div class="container">
                 <div class="row">
+
+                    <!-- Address Info -->
                     <div class="col-6">
                         <span class="text-white font-weight-bold">Address</span>
 
@@ -298,23 +329,25 @@
                         </div>
                     </div>
 
+                    <!-- Footer Links -->
                     <div class="col-3 d-flex" v-for="section in footerLinks">
                         <span class="text-white">{{section.name}}</span>
 
                         <div class="mt-3">
-                            <a href="" v-for="">Ciao</a>
-                            <a href="" v-for="">Ciao</a>
-                            <a href="" v-for="">Ciao</a>
+                            <a href="" v-for="">Link 1</a>
+                            <a href="" v-for="">Link 2</a>
+                            <a href="" v-for="">Link 3</a>
     
-                            <a href="" v-for="">Ciao</a>
-                            <a href="" v-for="">Ciao</a>
-                            <a href="" v-for="">Ciao</a>
+                            <a href="" v-for="">Link 4</a>
+                            <a href="" v-for="">Link 5</a>
+                            <a href="" v-for="">Link 6</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </footer>
+        
     </div>
     
     <!-- JS -->
