@@ -115,6 +115,22 @@ nav img {
   font-weight: 400;
 }
 
+@media (max-width: 575.98px) {
+  #jumbotron img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  #text_jumbo h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #text_jumbo h2 {
+    font-size: 38px;
+    font-weight: 400;
+  }
+}
 #learn_main_img {
   position: relative;
   top: 0;
