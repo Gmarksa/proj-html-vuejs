@@ -116,6 +116,9 @@ nav img {
 }
 
 @media (max-width: 575.98px) {
+  #jumbotron {
+    margin-bottom: 25px !important;
+  }
   #jumbotron img {
     height: 300px;
     -o-object-fit: cover;
