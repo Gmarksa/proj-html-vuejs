@@ -33,3 +33,24 @@
         left: 405px;
     }
 }
+
+@media (max-width: 575.98px) {
+    #about_us_img{
+        width: 80px;
+        height: 80px;
+
+        top: -55px;
+        right: 15px;
+    }
+
+    #learn_about{
+        .shape_07{
+            top: -75px;
+            left: 280px;
+        }
+
+        .col-lg-5{
+            margin-bottom: 80px;
+        }
+    }
+}
