@@ -19,3 +19,10 @@
 section, #stats{
     padding-bottom: 110px;
 }
+
+
+@media (max-width: 575.98px) {
+    #stats{
+        margin: 0;
+    }
+}
