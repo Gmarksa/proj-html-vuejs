@@ -65,3 +65,12 @@
     font-size: 12px;
     color: black;
 }
+
+
+@media (max-width: 575.98px) {
+    #slide{
+        .card{
+            flex: 0 0 100%;
+        }
+    }
+}

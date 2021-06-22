@@ -40,13 +40,17 @@
         height: 80px;
 
         top: -55px;
-        right: 15px;
+        right: 25px;
     }
 
     #learn_about{
         .shape_07{
             top: -75px;
-            left: 280px;
+            left: 270px;
+        }
+
+        .shape_02{
+            display: none;
         }
 
         .col-lg-5{

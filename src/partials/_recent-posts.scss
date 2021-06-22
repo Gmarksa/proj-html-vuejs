@@ -11,3 +11,10 @@
         font-size: 14px;
     }
 }
+
+
+@media (max-width: 575.98px) {
+    .col-lg-4:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

@@ -30,3 +30,20 @@
         z-index: -1;
     }
 }
+
+@media (max-width: 575.98px) {
+    #transform_main_img{
+        margin-bottom: 3rem;
+    }
+
+    #transform_you{
+        .shape-01, .shape-05{
+            display: none;
+        }
+
+        .shape-07{
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+}

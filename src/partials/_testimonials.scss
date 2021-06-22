@@ -3,7 +3,7 @@
         font-size: 15px;
     }
 
-    .col-7{
+    .col-lg-7{
         padding: 37px 50px 40px;
         
         box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
@@ -13,5 +13,11 @@
         font-size: 20px;
 
         line-height: 1.6;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-lg-7{
+        margin: 1rem !important;
     }
 }

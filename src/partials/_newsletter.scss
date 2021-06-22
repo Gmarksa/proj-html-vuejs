@@ -37,3 +37,17 @@
         right: 20px;
     }
 }
+
+@media (max-width: 575.98px) {
+    #newsletter{
+        padding-top: 40px;
+
+        input{
+            width: 80%;
+        }
+
+        .shape-09, .shape-02{
+            display: none;
+        }
+    }    
+}

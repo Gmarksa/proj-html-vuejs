@@ -166,12 +166,15 @@ nav img {
     width: 80px;
     height: 80px;
     top: -55px;
-    right: 15px;
+    right: 25px;
   }
 
   #learn_about .shape_07 {
     top: -75px;
-    left: 280px;
+    left: 270px;
+  }
+  #learn_about .shape_02 {
+    display: none;
   }
   #learn_about .col-lg-5 {
     margin-bottom: 80px;
@@ -210,6 +213,11 @@ nav img {
   z-index: -1;
 }
 
+@media (max-width: 575.98px) {
+  .shape-07 {
+    display: none;
+  }
+}
 #latest_courses {
   background: white;
   background: linear-gradient(180deg, white 0%, whitesmoke 100%);
@@ -271,10 +279,15 @@ nav img {
   color: black;
 }
 
+@media (max-width: 575.98px) {
+  #slide .card {
+    flex: 0 0 100%;
+  }
+}
 #testimonials a {
   font-size: 15px;
 }
-#testimonials .col-7 {
+#testimonials .col-lg-7 {
   padding: 37px 50px 40px;
   box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
 }
@@ -283,6 +296,11 @@ nav img {
   line-height: 1.6;
 }
 
+@media (max-width: 575.98px) {
+  .col-lg-7 {
+    margin: 1rem !important;
+  }
+}
 #transform_main_img {
   position: relative;
 }
@@ -308,6 +326,19 @@ nav img {
   z-index: -1;
 }
 
+@media (max-width: 575.98px) {
+  #transform_main_img {
+    margin-bottom: 3rem;
+  }
+
+  #transform_you .shape-01, #transform_you .shape-05 {
+    display: none;
+  }
+  #transform_you .shape-07 {
+    bottom: 0px;
+    right: 0px;
+  }
+}
 #recent_posts {
   background-color: #f8f8f8;
   padding-top: 110px;
@@ -319,6 +350,11 @@ nav img {
   font-size: 14px;
 }
 
+@media (max-width: 575.98px) {
+  .col-lg-4:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
 #newsletter_shapes {
   position: relative;
 }
@@ -350,6 +386,17 @@ nav img {
   right: 20px;
 }
 
+@media (max-width: 575.98px) {
+  #newsletter {
+    padding-top: 40px;
+  }
+  #newsletter input {
+    width: 80%;
+  }
+  #newsletter .shape-09, #newsletter .shape-02 {
+    display: none;
+  }
+}
 footer {
   background-color: #171621;
   position: relative;
@@ -385,5 +432,9 @@ section, #stats {
 @media (max-width: 575.98px) {
   #stats {
     margin: 0;
+  }
+
+  section, #stats {
+    padding-bottom: 40px;
   }
 }
