@@ -232,6 +232,7 @@ nav img {
 }
 #slide .card {
   flex: 0 0 calc((100% / 3) - 2.8rem);
+  transition: 1s;
 }
 #slide a {
   font-size: 19x;

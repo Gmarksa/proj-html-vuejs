@@ -176,8 +176,18 @@ const app = new Vue({
     },
 
     methods:{
-        scrollSlide(i){
+        scrollSlide(){
+            // Select The First Course Card
+            let courseCard = document.getElementById("slide").firstElementChild;
+            console.log("Current offsetWidth: " + courseCard.offsetWidth);
 
+            //Retrieve The Current Amount Of Its Margin Right
+            let style = courseCard.currentStyle || window.getComputedStyle(courseCard);
+            console.log("Current marginRight: " + parseInt(style.marginRight));
+            
+            // Set The New Margin
+            let newMargin = -(courseCard.offsetWidth + parseInt(style.marginRight)) * this.counter;         
+            courseCard.style.marginLeft = newMargin + "px";
         }
     }
 });

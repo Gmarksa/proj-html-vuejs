@@ -141,7 +141,17 @@ var app = new Vue({
     }]
   },
   methods: {
-    scrollSlide: function scrollSlide(i) {}
+    scrollSlide: function scrollSlide() {
+      // Select The First Course Card
+      var courseCard = document.getElementById("slide").firstElementChild;
+      console.log("Current offsetWidth: " + courseCard.offsetWidth); //Retrieve The Current Amount Of Its Margin Right
+
+      var style = courseCard.currentStyle || window.getComputedStyle(courseCard);
+      console.log("Current marginRight: " + parseInt(style.marginRight)); // Set The New Margin
+
+      var newMargin = -(courseCard.offsetWidth + parseInt(style.marginRight)) * this.counter;
+      courseCard.style.marginLeft = newMargin + "px";
+    }
   }
 });
 
